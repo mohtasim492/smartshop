@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartShop Online Product Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold text-blue-600">SmartShop</div>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="#home" class="menu-link active">Home</a></li>
+        <li><a href="#products" class="menu-link">Products</a></li>
+        <li><a href="#reviews" class="menu-link">Reviews</a></li>
+        <li><a href="#contact" class="menu-link">Contact</a></li>
+      </ul>
+      <button id="cartBtn" class="bg-blue-600 text-white px-4 py-2 rounded-md">🛒 Cart</button>
+    </nav>
+  </header>
+
+
+  <section id="home" class="mt-20">
+    <div class="relative overflow-hidden">
+      <div id="banner" class="flex transition-transform duration-700">
+        <img src="assets/banner1.jpg" class="w-full" alt="Banner 1">
+        <img src="assets/banner2.jpg" class="w-full" alt="Banner 2">
+        <img src="assets/banner3.jpg" class="w-full" alt="Banner 3">
+      </div>
+      <button id="prevBtn" class="absolute top-1/2 left-3 bg-white p-2 rounded-full">◀</button>
+      <button id="nextBtn" class="absolute top-1/2 right-3 bg-white p-2 rounded-full">▶</button>
+    </div>
+  </section>
+
+
+  <section id="products" class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Products</h2>
+    <div class="flex justify-center mb-6">
+      <input id="search" type="text" placeholder="Search Product..." class="border p-2 rounded-md w-64">
+    </div>
+    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+  </section>
+
+
+  <section id="reviews" class="bg-gray-100 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Customer Reviews</h2>
+    <div id="reviewContainer" class="max-w-3xl mx-auto overflow-hidden relative">
+      <div id="reviewSlider" class="flex transition-transform duration-700"></div>
+      <button id="revPrev" class="absolute top-1/2 left-3 bg-white p-2 rounded-full">◀</button>
+      <button id="revNext" class="absolute top-1/2 right-3 bg-white p-2 rounded-full">▶</button>
+    </div>
+  </section>
+
+
+  <section id="contact" class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+    <form id="contactForm" class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+      <input id="name" type="text" placeholder="Your Name" class="border p-2 w-full mb-3 rounded-md">
+      <input id="email" type="email" placeholder="Your Email" class="border p-2 w-full mb-3 rounded-md">
+      <textarea id="message" placeholder="Your Message" class="border p-2 w-full mb-3 rounded-md"></textarea>
+      <button type="submit" class="bg-blue-600 text-white w-full py-2 rounded-md">Send Message</button>
+    </form>
+    <p id="thanksMsg" class="text-center mt-4 text-green-600 hidden">✅ Thank you for your message!</p>
+  </section>
+
+
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>© 2025 SmartShop | Developed with 💙 by Students</p>
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full hidden">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

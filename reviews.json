@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Rahim Uddin",
+    "comment": "অসাধারণ পণ্য এবং ডেলিভারি খুব ফাস্ট!",
+    "rating": 5,
+    "date": "2025-10-15"
+  },
+  {
+    "name": "Mim Akter",
+    "comment": "ভালো লেগেছে, আবার কিনব!",
+    "rating": 4,
+    "date": "2025-10-20"
+  },
+  {
+    "name": "Tanvir Hasan",
+    "comment": "দাম অনুযায়ী ভালো কোয়ালিটি।",
+    "rating": 4,
+    "date": "2025-11-01"
+  }
+]
